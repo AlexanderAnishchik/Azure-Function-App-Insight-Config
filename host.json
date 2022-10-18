@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "logging": {
+    "logLevel": {
+      "default": "Information",
+      "Azure.Messaging.ServiceBus": "Warning",
+      "Host.Startup": "Warning",
+      "Azure.Core": "Warning",
+      "Microsoft": "Error",
+      "Worker": "Error"
+    },
+    "applicationInsights": {
+      "samplingSettings": {
+        "maxTelemetryItemsPerSecond": 2,
+        "isEnabled": true,
+        "excludedTypes": "Request;Exception"
+      },
+      "enableLiveMetrics": true,
+      "enableDependencyTracking": true,
+      "enablePerformanceCountersCollection": true
+    }
+  }
+}
